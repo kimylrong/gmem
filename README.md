@@ -56,6 +56,14 @@ buf := make([]byte,0,256)
 gmem.Free(buf)
 `
 
+# Benchmark
+
+`
+BenchmarkMallocWithSize1KB-8            22390994                52.1 ns/op            32 B/op          1 allocs/op
+BenchmarkMallocWithSize128KB-8          22735800                53.5 ns/op            32 B/op          1 allocs/op
+BenchmarkMallocWithSize1MB-8            21597294                51.7 ns/op            35 B/op          1 allocs/op
+`
+
 # Reference
 
 - https://github.com/google/tcmalloc/blob/master/tcmalloc/common.h
