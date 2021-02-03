@@ -39,30 +39,30 @@ node of class 2 has one 2*alignment, node of class n has one n*alignment.
 
 Buffer with size as 0:
 
-`
+```
 buf, err := gmem.Malloc(1024)
-`
+```
 
 Buffer with size as given:
 
-`
+```
 buf, err := gmem.MallocWithSize(1024, 1024)
-`
+```
 
 Free a buffer:
 
-`
+```
 buf := make([]byte,0,256)
 gmem.Free(buf)
-`
+```
 
 # Benchmark
 
-`
+```
 BenchmarkMallocWithSize1KB-8            22390994                52.1 ns/op            32 B/op          1 allocs/op
 BenchmarkMallocWithSize128KB-8          22735800                53.5 ns/op            32 B/op          1 allocs/op
 BenchmarkMallocWithSize1MB-8            21597294                51.7 ns/op            35 B/op          1 allocs/op
-`
+```
 
 # Reference
 
