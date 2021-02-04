@@ -49,7 +49,7 @@ Buffer with size as given:
 buf, err := gmem.MallocWithSize(1024, 1024)
 ```
 
-Free a buffer:
+## Free a buffer:
 
 ```
 buf := make([]byte,0,256)
